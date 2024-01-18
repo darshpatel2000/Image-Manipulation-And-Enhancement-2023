@@ -1,0 +1,22 @@
+load res\ppm\boys.ppm boys
+rgb-split boys boys-red boys-green boys-blue
+save res\ppm\boys-red.ppm boys-red
+save res\ppm\boys-green.ppm boys-green
+save res\ppm\boys-blue.ppm boys-blue
+rgb-combine boys-combined boys-red boys-green boys-blue
+save res\ppm\boys-combined.ppm boys-combined
+brighten 40 boys boys-brighten
+save res\ppm\boys-brighten.ppm boys-brighten
+brighten -50 boys boys-darker
+save res\ppm\boys-darker.ppm boys-darker
+vertical-flip boys boys-vertical
+save res\ppm\boys-vertical.ppm boys-vertical
+horizontal-flip boys boys-horizontal
+save res\ppm\boys-horizontal.ppm boys-horizontal
+greyscale value-component boys boys-value
+save res\ppm\boys-value.ppm boys-value
+greyscale intensity-component boys boys-intensity
+save res\ppm\boys-intensity.ppm boys-intensity
+greyscale luma-component boys boys-luma
+save res\ppm\boys-luma.ppm boys-luma
+quit

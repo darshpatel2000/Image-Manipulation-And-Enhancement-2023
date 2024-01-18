@@ -1,0 +1,10 @@
+save res\ppm\boys-brighten.ppm boys-brighten
+vertical-flip boys boys-vertical
+horizontal-flip boys boys-horizontal
+greyscale value-component boys boys-greyscale-value
+save res\ppm\boys-greyscale-value.ppm boys-greyscale-value
+rgb-split boys boys-red boys-green boys-blue
+brighten 50 boys-red boys-red
+dither boys-red boys-red-dither
+save res\ppm\boys-red-dither.ppm boys-red-dither
+quit

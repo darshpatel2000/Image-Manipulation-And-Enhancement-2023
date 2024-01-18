@@ -1,0 +1,11 @@
+load res/random/small.ppm small
+blur small small-blur-png
+blur small small-blur-jpg
+save res/random/small-blur-png.png small-blur-png
+save res/random/small-blur-jpg.jpg small-blur-jpg
+blur small-blur-png small-double-blur-bmp
+save res/random/small-double-blur-bmp.bmp small-double-blur-bmp
+load res/random/small-double-blur-bmp.bmp small-new
+brighten -42 small-new small-darker
+sepia small-darker darker-sepia
+save res/random/darker-sepia.ppm darker-sepia

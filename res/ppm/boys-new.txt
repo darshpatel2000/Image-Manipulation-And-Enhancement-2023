@@ -1,0 +1,10 @@
+load res/ppm/boys.ppm boys
+blur boys boys-blur
+save res\ppm\boys-blur.ppm boys-blur
+sharpen boys boys-sharpen
+save res\ppm\boys-sharpen.ppm boys-sharpen
+sepia boys boys-sepia
+save res\ppm\boys-sepia.ppm boys-sepia
+dither boys boys-dither
+save res\ppm\boys-dither.ppm boys-dither
+quit

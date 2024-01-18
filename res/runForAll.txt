@@ -1,0 +1,5 @@
+run res/bmp/boys.txt
+run res/jpg/boys.txt
+run res/png/boys.txt
+run res/ppm/boys.txt
+quit

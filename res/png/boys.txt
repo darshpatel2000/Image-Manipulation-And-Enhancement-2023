@@ -1,0 +1,30 @@
+load res\png\boys.png boys
+rgb-split boys boys-red boys-green boys-blue
+save res\png\boys-red.png boys-red
+save res\png\boys-green.png boys-green
+save res\png\boys-blue.png boys-blue
+rgb-combine boys-combined boys-red boys-green boys-blue
+save res\png\boys-combined.png boys-combined
+brighten 40 boys boys-brighten
+save res\png\boys-brighten.png boys-brighten
+brighten -50 boys boys-darker
+save res\png\boys-darker.png boys-darker
+vertical-flip boys boys-vertical
+save res\png\boys-vertical.png boys-vertical
+horizontal-flip boys boys-horizontal
+save res\png\boys-horizontal.png boys-horizontal
+greyscale value-component boys boys-value
+save res\png\boys-value.png boys-value
+greyscale intensity-component boys boys-intensity
+save res\png\boys-intensity.png boys-intensity
+greyscale luma-component boys boys-luma
+save res\png\boys-luma.png boys-luma
+blur boys boys-blur
+save res\png\boys-blur.png boys-blur
+sharpen boys boys-sharpen
+save res\png\boys-sharpen.png boys-sharpen
+sepia boys boys-sepia
+save res\png\boys-sepia.png boys-sepia
+dither boys boys-dither
+save res\png\boys-dither.png boys-dither
+quit

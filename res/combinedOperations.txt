@@ -1,0 +1,44 @@
+load ppm/boys.ppm boys-ppm
+load png/boys.png boys-png
+load jpg/boys.jpg boys-jpg
+load jpg/boys.bmp boys-bmp
+brighten 50 boys-ppm boys-brighter
+save bmp/boys-brighter-bmp.bmp boys-brighter
+brighten -50 boys-ppm boys-darken
+save bmp/boys-darken-bmp.bmp boys-darken
+rgb-split boys-ppm boys-red boys-green boys-blue
+save png/boys-green-split-png.png boys-green
+save ppm/boys-red-split-ppm.ppm boys-red
+save jpg/boys-blue-split-jpg.jpg boys-blue
+load png/boys-green-split-png.png boys-green
+load ppm/boys-red-split-ppm.ppm boys-red
+load jpg/boys-blue-split-jpg.jpg boys-blue
+rgb-combine boys-combined boys-red boys-green boys-blue
+save jpg/boys-combined-jpg.jpg boys-combined
+greyscale value-component boys-png boys-value-greyscale
+save ppm/boys-value-greyscale-ppm.ppm boys-value-greyscale
+greyscale luma-component boys-png boys-luma-greyscale
+save jpg/boys-luma-greyscale-jpg.jpg boys-luma-greyscale
+greyscale intensity-component boys-png boys-intensity-greyscale
+save bmp/boys-intensity-greyscale-bmp.bmp boys-intensity-greyscale
+greyscale red-component boys-jpg boys-red-greyscale
+save ppm/boys-red-greyscale-ppm.ppm boys-red-greyscale
+greyscale green-component boys-jpg boys-green-greyscale
+save png/boys-green-greyscale-png.png boys-green-greyscale
+greyscale blue-component boys-jpg boys-blue-greyscale
+save bmp/boys-blue-greyscale-bmp.bmp boys-blue-greyscale
+horizontal-flip boys-bmp boys-horizontal
+save ppm/boys-horizontal-ppm.ppm boys-horizontal
+vertical-flip boys-horizontal boys-horizontal-vertical
+save png/boys-horizontal-vertical-png.png boys-horizontal-vertical
+blur boys-ppm boys-blur
+save ppm/boys-blur-ppm.ppm boys-blur
+sharpen boys-png boys-sharpen
+save png/boys-sharpen-png.png boys-sharpen
+dither boys-bmp boys-dither
+save bmp/boys-dither-bpm.bmp boys-dither
+greyscale luma-component boys-png boys-luma-greyscale
+save jpg/boys-luma-greyscale-jpg.jpg boys-luma-greyscale
+sepia boys-jpg boys-sepia
+save jpg/boys-sepia-jpg.jpg boys-sepia
+quit
